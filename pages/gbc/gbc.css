@@ -1,0 +1,38 @@
+
+
+.sommaire{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 25px;
+    margin: 50px 75px;
+    padding: 25px;
+}
+
+.sommaire-liens{
+    font-size: 1.2em;
+    font-weight: 300;
+}
+
+.contenu{
+    margin: 50px 75px;
+    padding: 25px;
+    background-color: #fff;
+    border-radius: 25px;
+}
+
+.contenu strong{
+    color: #333;
+}
+
+.contenu h4{
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.partie-contenu{
+    padding: 25px;
+    text-align: justify;
+}

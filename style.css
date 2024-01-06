@@ -1,0 +1,396 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500&display=swap');
+
+:root {
+    --text: #000;
+    --background: #F5F7FA;
+    --btn-select: #1E90FF;
+    --btn-hover: #1e8fff42;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--background);
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+}
+
+li {
+    list-style-type: none;
+}
+
+header {
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #fff;
+    position: relative;
+}
+
+#select{
+    color:var(--btn-select);
+}
+.menu {
+    display: flex;
+    align-items: top;
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    background-color: #fff;
+}
+
+.menu ul {
+    display: none;
+    margin: 0px;
+    padding: 0px;
+    position: absolute;
+}
+
+.menu a {
+    display: flex;
+    padding: 50px 100px;
+    line-height: 35px;
+    font-weight: 425;
+    color: var(--text);
+    text-decoration: none;
+    padding: 3px 25px;
+    text-align: center;
+}
+
+.menu a:hover {
+    color: var(--btn-select);
+}
+
+.menu li:hover ul {
+    display: flex;
+    flex-direction: column;
+}
+
+.menu li {
+    position: relative;
+}
+
+.menu li ul {
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+}
+
+.menuderoulant a {
+    display: flex;
+    align-items: center;
+}
+
+.menuderoulant a:hover {
+    color: #000;
+}
+
+.sousmenu a:hover {
+    color: var(--btn-select);
+}
+
+@media only screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .menu {
+        flex-direction: column;
+    }
+
+    .menu li:hover ul {
+
+        flex-direction: row;
+    }
+}
+
+
+.sep{
+    margin: 50px;
+}
+.moi-groupe{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.moi-groupe img{
+    background-color: #fff;
+    width: 80%;
+    border-radius: 100%;
+}
+
+.moi-text{
+    background-color: #fff;
+    padding: 100px;
+    border-radius: 25px;
+}
+
+.moi-text h2{
+    font-size: 24px;
+    animation-name: defilement;
+    animation-duration: 2s;
+}
+
+.moi{
+    padding: 50px;
+}
+
+@keyframes defilement{
+    100% {
+        transform: translateY(0);
+      }
+      0% {
+        transform: translateY(-100%);
+      }
+}
+
+@media only screen and (max-width: 768px) {
+    .moi-groupe {
+        flex-direction: column;
+    }
+
+}
+.competence{
+    padding: 50px;
+    background-color: #fff;
+    
+}
+.competence-groupe{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 25px;
+}
+
+.img-comp
+{
+    display: flex;
+    flex-direction: row;
+}
+
+.img-comp-groupe{
+    display: flex;
+    background-color: var(--background);
+    padding: 50px;
+}
+
+.space{
+    margin: 0 10px;
+}
+
+.img-comp img
+{
+width: 35%;
+}
+
+.competence-titre h3{
+    text-align: center;
+}
+
+.langue{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.comp-light{
+    font-weight: 300;
+    font-size: 1.5em;
+}
+
+.comp-light p{
+    background-color: #fff;
+    padding: 25px;
+    border-radius: 25px;
+}
+
+
+@media only screen and (max-width: 768px) {
+    .img-comp-groupe{
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    .img-comp img
+    {
+    width: 25%;
+    }
+
+    .img-comp{
+        justify-content: center;
+        align-items: center;
+        margin-bottom:25px;
+    }
+}
+
+.infos{
+    background-color: #fff;
+}
+.info-group{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 50px;
+
+}
+
+.titre-info{
+    text-align: center;
+}
+
+.ul-form{
+    list-style-type:disc;
+    font-weight: 450;
+}
+
+.info-contenu{
+    text-justify: justify;
+}
+
+#ici{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#kubuntu{
+    width: 20%;
+}
+
+/* Votre CSS existant... */
+
+@media only screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+    }
+
+    .menu {
+        flex-direction: column;
+    }
+
+    .menu li {
+        position: relative;
+    }
+
+    .menu li ul {
+        top: auto;
+        left: 0;
+        background-color: #fff;
+        display: none;
+        position: relative;
+    }
+
+    .menu a {
+        padding: 15px;
+        text-align: center;
+    }
+
+    .menu a:hover{
+        background-color: var(--btn-hover);
+    }
+    .menu li:hover ul {
+        display: block;
+    }
+
+    .moi-groupe img {
+        width: 100%;
+    }
+
+    .moi-text {
+        padding: 25px;
+    }
+
+    .competence,
+    .infos,
+    .vt-news,
+    footer {
+        padding: 25px;
+    }
+
+    .img-comp img {
+        width: 50%;
+    }
+
+    #kubuntu {
+        width: 50%;
+    }
+
+    #win11 {
+        width: 100%;
+    }
+
+    #news h3 {
+        padding: 10px;
+        background-color: red;
+        color: #fff;
+        border-radius: 10px;
+    }
+
+    footer {
+        margin: 25px;
+        height: auto;
+    }
+}
+
+
+.vt-news{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#news{
+    display: flex;
+    text-align: center;
+}
+#news h3{
+    padding: 10px;
+    background-color: red;
+    color: #fff;
+    border-radius: 25px;
+}
+
+footer{
+    border-radius: 25px;
+    margin: 50px 75px;
+    padding: 25px;
+    height: 250px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: justify;
+}
+
+footer a{
+    color: #000;
+    text-decoration: none;
+}
+
+
+.titre{
+    text-align: center;
+}
+
+.fiche{
+    display: flex;
+}
+ 
+.sio{
+    text-align: center;
+}
+.fiche h3{
+    text-align: center;
+}
+
+.slam,.sisr{
+    margin-top: 50px;
+    margin: 25px;
+    padding: 25px;
+    background-color: #fff;
+    border-radius: 25px;
+}

@@ -1,0 +1,120 @@
+a{
+    color: #000;
+    text-decoration: none;
+}
+
+.articles-sec img{
+    width: 350px;
+}
+.articles-sec{
+    display: flex;
+    flex-direction: column;
+    margin: 50px;
+    background-color: #fff;
+    border-radius: 25px;
+}
+
+.article{
+    
+    padding: 25px;
+    display: flex;
+    
+}
+
+.article-img{
+    margin-right: 25px;
+}
+
+
+/*---[Source-Section]---*/
+.source-section{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.titres-section{
+    margin:0 10px 0 10px;
+    text-align: center;
+}
+
+.sources{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 50px;
+}
+
+.sources1{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-bottom: 50px;
+}
+
+.source-img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #eee;
+    border-radius: 25px;
+    padding: 25px;
+}
+
+.source-img img{
+    width: 100px;
+}
+
+.source-text{
+    margin-top: 25px;
+    background-color: #fff;
+    padding: 5px;
+    text-align: justify;
+    border-radius: 25px;
+    width: 250px;
+}
+
+.source-text h4{
+    text-align: center;
+}
+
+.source-text p{
+    color: #333;
+    padding: 25px;
+}
+
+.blockchain_text{
+    font-weight: 300;
+    font-size: 1.2em;
+    text-align: justify;
+    background-color: #fff;
+    border-radius: 25px;
+    justify-content: center;
+    margin: 50px 75px;
+    padding: 25px;
+}
+
+.blockchain_text h4{
+    text-align: center;
+    font-size: 1.5em;
+}
+
+@media (max-width: 992px) {
+    .sources, .sources1{
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 768px) {
+    .article{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 480px) {
+    .articles-sec img{
+        width: 150px;
+    }
+}
+
