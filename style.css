@@ -18,6 +18,9 @@ li {
     list-style-type: none;
 }
 
+h1{
+    font-size: 1.5em;
+}
 header {
 
     display: flex;

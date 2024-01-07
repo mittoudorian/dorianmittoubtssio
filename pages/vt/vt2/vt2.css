@@ -111,6 +111,16 @@ a{
     }
 }
 
+@media (max-width: 480px) {
+    .articles-sec img{
+        width: 150px;
+    }
+
+    .article{
+        justify-content: center;
+    }
+}
+
 @media (max-width: 768px) {
     .article{
         display: flex;
